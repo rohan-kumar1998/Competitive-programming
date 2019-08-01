@@ -111,7 +111,7 @@ public:
 				low[v] = min(low[v], tin[to]); 
 			}else{
 				dfs(to, v); 
-				low[v] = min(low[v], tin[to]); 
+				low[v] = min(low[v], low[to]); 
 				if(low[to] >= tin[v] && p != -1){
 					cut_point.insert(v); 
 				}
